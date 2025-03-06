@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布需求 - PromptArena</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏... -->
+    
+    <section class="publish-demand">
+        <div class="container">
+            <h2>发布企业提示词需求</h2>
+            <p>描述您的AI应用场景，获得最佳提示词解决方案</p>
+            
+            <form class="demand-form">
+                <div class="form-group">
+                    <label for="title">需求标题</label>
+                    <input type="text" id="title" placeholder="例：产品描述自动生成AI提示词">
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">详细描述</label>
+                    <textarea id="description" rows="6" placeholder="详细描述您的应用场景和期望结果..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="model">目标模型</label>
+                    <select id="model">
+                        <option value="gpt4">GPT-4</option>
+                        <option value="claude3">Claude 3</option>
+                        <option value="gemini">Gemini Pro</option>
+                        <option value="llama3">Llama 3</option>
+                        <option value="other">其他（请说明）</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">预算金额 (元)</label>
+                    <input type="number" id="budget" min="100">
+                </div>
+                
+                <div class="form-group">
+                    <label for="deadline">截止日期</label>
+                    <input type="date" id="deadline">
+                </div>
+                
+                <button type="submit" class="btn-primary">发布需求</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html> 

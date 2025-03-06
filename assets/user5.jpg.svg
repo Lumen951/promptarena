@@ -1,0 +1,46 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="200" fill="#10B981" />
+  
+  <!-- 装饰性背景元素 -->
+  <circle cx="40" cy="40" r="70" fill="#047857" />
+  <circle cx="160" cy="160" r="70" fill="#065F46" />
+  
+  <!-- 发光效果 -->
+  <circle cx="100" cy="100" r="60" fill="#F59E0B" opacity="0.6" />
+  <circle cx="100" cy="100" r="45" fill="#FBBF24" />
+  
+  <!-- 面部特征 - 猫科风格 -->
+  <polygon points="80,75 90,85 70,85" fill="#7F1D1D" /> <!-- 左耳 -->
+  <polygon points="120,75 130,85 110,85" fill="#7F1D1D" /> <!-- 右耳 -->
+  
+  <ellipse cx="85" cy="95" rx="7" ry="10" fill="#1F2937" /> <!-- 左眼 -->
+  <ellipse cx="115" cy="95" rx="7" ry="10" fill="#1F2937" /> <!-- 右眼 -->
+  
+  <path d="M90,115 L100,120 L110,115" stroke="#1F2937" stroke-width="2" fill="none" /> <!-- 嘴 -->
+  
+  <!-- 胡须 -->
+  <line x1="65" y1="105" x2="80" y2="110" stroke="#1F2937" stroke-width="1.5" />
+  <line x1="65" y1="115" x2="80" y2="115" stroke="#1F2937" stroke-width="1.5" />
+  <line x1="65" y1="125" x2="80" y2="120" stroke="#1F2937" stroke-width="1.5" />
+  
+  <line x1="135" y1="105" x2="120" y2="110" stroke="#1F2937" stroke-width="1.5" />
+  <line x1="135" y1="115" x2="120" y2="115" stroke="#1F2937" stroke-width="1.5" />
+  <line x1="135" y1="125" x2="120" y2="120" stroke="#1F2937" stroke-width="1.5" />
+  
+  <!-- 点缀 -->
+  <g opacity="0.4">
+    <rect x="40" y="140" width="5" height="5" fill="#A7F3D0" />
+    <rect x="50" y="150" width="5" height="5" fill="#A7F3D0" />
+    <rect x="60" y="140" width="5" height="5" fill="#A7F3D0" />
+    <rect x="70" y="150" width="5" height="5" fill="#A7F3D0" />
+    <rect x="80" y="140" width="5" height="5" fill="#A7F3D0" />
+    <rect x="90" y="150" width="5" height="5" fill="#A7F3D0" />
+    <rect x="100" y="140" width="5" height="5" fill="#A7F3D0" />
+    <rect x="110" y="150" width="5" height="5" fill="#A7F3D0" />
+    <rect x="120" y="140" width="5" height="5" fill="#A7F3D0" />
+    <rect x="130" y="150" width="5" height="5" fill="#A7F3D0" />
+    <rect x="140" y="140" width="5" height="5" fill="#A7F3D0" />
+    <rect x="150" y="150" width="5" height="5" fill="#A7F3D0" />
+  </g>
+</svg> 

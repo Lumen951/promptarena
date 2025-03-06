@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆 -->
+  <circle cx="100" cy="100" r="95" fill="#1a1a2e" />
+  
+  <!-- 神经网络节点和连接 -->
+  <g stroke="#3498db" stroke-width="2.5" fill="none">
+    <!-- 中心节点 -->
+    <circle cx="100" cy="100" r="15" fill="#9b59b6" stroke="none" />
+    
+    <!-- 外部节点 -->
+    <circle cx="60" cy="70" r="8" fill="#3498db" stroke="none" />
+    <circle cx="140" cy="70" r="8" fill="#3498db" stroke="none" />
+    <circle cx="60" cy="130" r="8" fill="#3498db" stroke="none" />
+    <circle cx="140" cy="130" r="8" fill="#3498db" stroke="none" />
+    <circle cx="45" cy="100" r="8" fill="#2ecc71" stroke="none" />
+    <circle cx="155" cy="100" r="8" fill="#2ecc71" stroke="none" />
+    
+    <!-- 连接线 -->
+    <path d="M100,85 L60,70" />
+    <path d="M100,85 L140,70" />
+    <path d="M100,115 L60,130" />
+    <path d="M100,115 L140,130" />
+    <path d="M85,100 L45,100" />
+    <path d="M115,100 L155,100" />
+  </g>
+  
+  <!-- 大脑形状 -->
+  <path d="M100,65 C130,55 145,80 145,100 C145,120 130,145 100,135 C70,145 55,120 55,100 C55,80 70,55 100,65" 
+        fill="none" stroke="#2ecc71" stroke-width="3" opacity="0.7" />
+  
+  <!-- 文字字母P -->
+  <path d="M95,95 L95,115 M95,95 C105,95 110,95 110,102 C110,109 105,109 95,109" 
+        stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- 脉冲光环 -->
+  <circle cx="100" cy="100" r="80" stroke="#2ecc71" stroke-width="1.5" fill="none" opacity="0.3">
+    <animate attributeName="r" values="80;85;80" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" />
+  </circle>
+</svg> 

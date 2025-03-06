@@ -1,0 +1,224 @@
+/* 登录/注册页面样式 */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  padding: 40px 0;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.auth-header {
+  padding: 20px;
+  background: linear-gradient(to right, var(--primary-color-light), var(--primary-color));
+  color: white;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.auth-tab {
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-tab:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.auth-tab.active {
+  color: var(--primary-color);
+  background: white;
+}
+
+.auth-form {
+  padding: 30px;
+  display: none;
+}
+
+.auth-form.active {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.auth-button:hover {
+  background: #2980b9;
+}
+
+.social-auth {
+  margin-top: 30px;
+}
+
+.social-divider {
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+  color: #777;
+}
+
+.social-divider:before,
+.social-divider:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 60px);
+  height: 1px;
+  background: #ddd;
+}
+
+.social-divider:before {
+  left: 0;
+}
+
+.social-divider:after {
+  right: 0;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.social-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-button:hover {
+  background: #f9f9f9;
+  transform: translateY(-2px);
+}
+
+.social-button.google:hover {
+  border-color: #DB4437;
+}
+
+.social-button.github:hover {
+  border-color: #333;
+}
+
+.form-group.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group.checkbox input {
+  margin: 0;
+}
+
+.form-group.checkbox label {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.form-error {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 576px) {
+  .auth-card {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .auth-container {
+    padding: 0;
+  }
+  
+  .social-buttons {
+    flex-direction: column;
+  }
+} 

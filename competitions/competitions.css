@@ -1,0 +1,447 @@
+/* 竞赛页面特定样式 */
+.page-header {
+  background: linear-gradient(135deg, var(--dark-bg), #16213e);
+  color: var(--light-text);
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
+}
+
+.page-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+/* 竞赛列表布局 */
+.competitions-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* 筛选器样式 */
+.competition-filters {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+}
+
+.filter-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.filter-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: var(--dark-bg);
+}
+
+.filter-group {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.filter-group h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #444;
+  padding: 6px 0;
+  transition: all 0.2s ease;
+}
+
+.filter-option:hover {
+  color: var(--primary-color);
+}
+
+.filter-option input {
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+}
+
+.filter-reset {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  background: rgba(52, 152, 219, 0.08);
+  color: var(--primary-color);
+  border: 1px solid rgba(52, 152, 219, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.filter-reset:hover {
+  background: rgba(52, 152, 219, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.1);
+}
+
+.filter-reset:active {
+  transform: translateY(0);
+}
+
+/* 列表控制 */
+.list-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.list-count {
+  font-size: 1rem;
+  color: #555;
+}
+
+.list-count .highlight {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.list-sort {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-sort label {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.list-sort select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* 竞赛卡片 */
+.competition-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.competition-card {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 
+              0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.competition-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.1),
+              0 3px 10px rgba(52, 152, 219, 0.05);
+  border-color: rgba(52, 152, 219, 0.1);
+}
+
+.competition-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 12px 0 0 12px;
+}
+
+.competition-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.competition-logo img {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.competition-title {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #1a1e2c;
+  font-weight: 600;
+}
+
+.competition-sponsor {
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.competition-description {
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.competition-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.meta-item i {
+  margin-right: 5px;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+}
+
+.competition-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.tag {
+  padding: 5px 12px;
+  background: rgba(52, 152, 219, 0.08);
+  color: var(--primary-color);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: rgba(52, 152, 219, 0.15);
+  transform: translateY(-2px);
+}
+
+.competition-action {
+  align-self: center;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.competition-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+}
+
+.competition-action:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
+
+.competition-action::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #3498db, #2980b9, #3498db);
+  z-index: -1;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.competition-action:hover::before {
+  opacity: 0.3;
+}
+
+/* 分页 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 8px;
+}
+
+.pagination-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: white;
+  color: #444;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pagination-item.active,
+.pagination-item:hover {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+}
+
+.pagination-item.next {
+  width: auto;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pagination-item.next:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+  transform: skewX(-20deg) translateX(180px);
+  transition: all 0.7s ease;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: skewX(-20deg) translateX(-180px);
+  }
+  100% {
+    transform: skewX(-20deg) translateX(180px);
+  }
+}
+
+/* 添加快速筛选按钮样式 */
+.quick-filter-buttons {
+  display: flex;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+  .competitions-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .competition-filters {
+    position: static;
+    margin-bottom: 30px;
+  }
+  
+  .filter-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .competition-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .competition-logo {
+    margin-bottom: -10px;
+  }
+  
+  .competition-action {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .quick-filter-buttons {
+    margin-left: 0;
+    margin-top: 10px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+} 

@@ -1,0 +1,39 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="200" fill="#EC4899" />
+  
+  <!-- 几何图形装饰 -->
+  <circle cx="30" cy="30" r="80" fill="#DB2777" />
+  <circle cx="170" cy="170" r="80" fill="#BE185D" />
+  
+  <!-- 方形交叉背景 -->
+  <rect x="70" y="70" width="60" height="60" fill="#F472B6" transform="rotate(45 100 100)" />
+  
+  <!-- 抽象脸部 -->
+  <circle cx="100" cy="90" r="40" fill="#0EA5E9" />
+  
+  <!-- 特征 -->
+  <circle cx="85" cy="80" r="8" fill="white" />
+  <circle cx="115" cy="80" r="8" fill="white" />
+  <circle cx="85" cy="80" r="4" fill="black" />
+  <circle cx="115" cy="80" r="4" fill="black" />
+  
+  <!-- 嘴 -->
+  <path d="M85,105 Q100,115 115,105" stroke="white" stroke-width="3" fill="none" />
+  
+  <!-- 帽子 -->
+  <path d="M60,60 Q100,30 140,60" stroke="#0369A1" stroke-width="8" fill="none" />
+  
+  <!-- 装饰图案 -->
+  <g opacity="0.5">
+    <rect x="50" y="130" width="10" height="10" fill="#67E8F9" />
+    <rect x="70" y="130" width="10" height="10" fill="#67E8F9" />
+    <rect x="90" y="130" width="10" height="10" fill="#67E8F9" />
+    <rect x="110" y="130" width="10" height="10" fill="#67E8F9" />
+    <rect x="130" y="130" width="10" height="10" fill="#67E8F9" />
+    <rect x="60" y="140" width="10" height="10" fill="#22D3EE" />
+    <rect x="80" y="140" width="10" height="10" fill="#22D3EE" />
+    <rect x="100" y="140" width="10" height="10" fill="#22D3EE" />
+    <rect x="120" y="140" width="10" height="10" fill="#22D3EE" />
+  </g>
+</svg> 

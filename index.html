@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptArena - AI提示词竞技场</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container main-nav">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="assets/logo.svg" alt="PromptArena">
+                    <h1>PromptArena</h1>
+                </a>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="搜索竞赛..." aria-label="搜索竞赛">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">首页</a></li>
+                <li><a href="./competitions/index.html">竞赛</a></li>
+                <li><a href="./demands/index.html">企业需求</a></li>
+                <li><a href="./leaderboard/index.html">排行榜</a></li>
+                <li><a href="./login/index.html" class="btn-login">登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>探索AI的无限可能，<br>用创意提示词赢取奖励</h2>
+            <p>参与企业级提示词挑战，展示你的AI驾驭能力</p>
+            <div class="hero-buttons">
+                <a href="./competitions/index.html" class="btn-primary tech-btn">
+                    <span class="btn-icon">&#9881;</span>
+                    <span class="btn-text">浏览竞赛</span>
+                </a>
+                <a href="./competitions/index.html" class="btn-secondary tech-btn">
+                    <span class="btn-icon">&#128640;</span>
+                    <span class="btn-text">参与竞赛</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-graphic">
+            <!-- AI/神经网络动画图形 -->
+        </div>
+    </section>
+    
+    <main class="container main-content">
+        <div class="content-grid">
+            <!-- 左侧主内容区域：当前发布的提示词需求 -->
+            <section class="active-demands">
+                <h3>当前发布的提示词需求</h3>
+                
+                <div class="demand-cards">
+                    <!-- 需求卡片1 -->
+                    <div class="demand-card">
+                        <div class="demand-header">
+                            <h4>电商产品描述生成优化</h4>
+                            <span class="demand-price">¥2,000</span>
+                        </div>
+                        <p class="demand-company">来自：阿里巴巴</p>
+                        <p class="demand-description">寻找能够根据简短产品特性生成吸引人的电商产品描述的提示词，需支持多种商品类别。</p>
+                        <div class="demand-meta">
+                            <span class="demand-model">GPT-4</span>
+                            <span class="demand-deadline">截止日期: 2025-08-15</span>
+                        </div>
+                        <a href="/demand/1" class="btn-secondary">查看详情</a>
+                    </div>
+                    
+                    <!-- 需求卡片2 -->
+                    <div class="demand-card">
+                        <div class="demand-header">
+                            <h4>客服聊天机器人对话优化</h4>
+                            <span class="demand-price">¥3,500</span>
+                        </div>
+                        <p class="demand-company">来自：腾讯</p>
+                        <p class="demand-description">为金融行业客服机器人设计提示词，能够准确回答用户问题并保持友好专业的语气。</p>
+                        <div class="demand-meta">
+                            <span class="demand-model">Claude 3</span>
+                            <span class="demand-deadline">截止日期: 2025-07-20</span>
+                        </div>
+                        <a href="/demand/2" class="btn-secondary">查看详情</a>
+                    </div>
+                    
+                    <!-- 需求卡片3 -->
+                    <div class="demand-card">
+                        <div class="demand-header">
+                            <h4>医疗健康内容生成</h4>
+                            <span class="demand-price">¥5,000</span>
+                        </div>
+                        <p class="demand-company">来自：平安健康</p>
+                        <p class="demand-description">需要能够生成准确、专业且通俗易懂的医疗健康知识内容的提示词，确保内容科学可靠。</p>
+                        <div class="demand-meta">
+                            <span class="demand-model">GPT-4</span>
+                            <span class="demand-deadline">截止日期: 2025-06-25</span>
+                        </div>
+                        <a href="/demand/3" class="btn-secondary">查看详情</a>
+                    </div>
+                </div>
+                
+                <a href="./competitions/index.html" class="view-more">查看更多比赛 →</a>
+            </section>
+            
+            <!-- 右侧边栏：用户奖金排行榜 -->
+            <aside class="sidebar">
+                <div class="user-leaderboard">
+                    <h3>用户奖金排行榜</h3>
+                    <ul class="user-ranking">
+                        <li>
+                            <div class="rank">1</div>
+                            <div class="user-info">
+                                <img src="assets/user1.jpg.svg" alt="用户头像" class="user-avatar">
+                                <div class="user-details">
+                                    <div class="user-name">码农小胖</div>
+                                    <div class="user-wins">获胜次数: 12</div>
+                                </div>
+                            </div>
+                            <div class="user-earnings">¥24,500</div>
+                        </li>
+                        <li>
+                            <div class="rank">2</div>
+                            <div class="user-info">
+                                <img src="assets/user2.jpg.svg" alt="用户头像" class="user-avatar">
+                                <div class="user-details">
+                                    <div class="user-name">极客之光</div>
+                                    <div class="user-wins">获胜次数: 8</div>
+                                </div>
+                            </div>
+                            <div class="user-earnings">¥18,200</div>
+                        </li>
+                        <li>
+                            <div class="rank">3</div>
+                            <div class="user-info">
+                                <img src="assets/user3.jpg.svg" alt="用户头像" class="user-avatar">
+                                <div class="user-details">
+                                    <div class="user-name">DevNinja</div>
+                                    <div class="user-wins">获胜次数: 7</div>
+                                </div>
+                            </div>
+                            <div class="user-earnings">¥15,800</div>
+                        </li>
+                        <li>
+                            <div class="rank">4</div>
+                            <div class="user-info">
+                                <img src="assets/user4.jpg.svg" alt="用户头像" class="user-avatar">
+                                <div class="user-details">
+                                    <div class="user-name">码力全开</div>
+                                    <div class="user-wins">获胜次数: 5</div>
+                                </div>
+                            </div>
+                            <div class="user-earnings">¥12,300</div>
+                        </li>
+                        <li>
+                            <div class="rank">5</div>
+                            <div class="user-info">
+                                <img src="assets/user5.jpg.svg" alt="用户头像" class="user-avatar">
+                                <div class="user-details">
+                                    <div class="user-name">AI圣手</div>
+                                    <div class="user-wins">获胜次数: 4</div>
+                                </div>
+                            </div>
+                            <div class="user-earnings">¥9,700</div>
+                        </li>
+                    </ul>
+                    <a href="/leaderboard" class="view-more">查看完整排行榜 →</a>
+                </div>
+                
+                <!-- 近期获奖提示词展示 -->
+                <div class="winning-prompts">
+                    <h3>近期获奖提示词</h3>
+                    <div class="prompt-card">
+                        <h4>电商营销创意生成</h4>
+                        <p class="prompt-winner">获奖者: 码农小胖</p>
+                        <p class="prompt-prize">奖金: ¥3,000</p>
+                    </div>
+                    <div class="prompt-card">
+                        <h4>游戏角色设计描述</h4>
+                        <p class="prompt-winner">获奖者: 极客之光</p>
+                        <p class="prompt-prize">奖金: ¥2,500</p>
+                    </div>
+                    <a href="./competitions/index.html" class="view-more">查看更多获奖作品 →</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.svg" alt="PromptArena">
+                    <p>PromptArena - AI提示词竞技场</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>关于我们</h4>
+                        <ul>
+                            <li><a href="/about">公司介绍</a></li>
+                            <li><a href="/team">团队成员</a></li>
+                            <li><a href="/contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>资源</h4>
+                        <ul>
+                            <li><a href="./blog">博客</a></li>
+                            <li><a href="./competitions/index.html">竞赛列表</a></li>
+                            <li><a href="./guides">提示词指南</a></li>
+                            <li><a href="./faq">常见问题</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>法律</h4>
+                        <ul>
+                            <li><a href="/terms">服务条款</a></li>
+                            <li><a href="/privacy">隐私政策</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PromptArena. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
